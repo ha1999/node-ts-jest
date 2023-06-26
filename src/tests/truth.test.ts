@@ -1,3 +1,7 @@
+import setupTestDB from "./utils/setupTestDB";
+
+setupTestDB();
+
 describe("True value Javascript", () => {
     test('null', () => {
         const n = null;

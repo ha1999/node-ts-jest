@@ -1,3 +1,5 @@
+import setupTestDB from "./utils/setupTestDB";
+
 function fetchData() {
     return Promise.resolve("peanut butter")
 }
@@ -5,6 +7,8 @@ function fetchData() {
 function fetchDataError() {
     return Promise.reject("peanut butter")
 }
+
+setupTestDB();
 
 describe('Async fucntion in Javascript', () => {
     test('the data is peanut butter', () => {

@@ -1,5 +1,7 @@
-
 import { add, multiply } from "../app/math";
+import setupTestDB from "./utils/setupTestDB";
+
+setupTestDB();
 
 describe("Math functions", () => {
   it("should multiply 5 by 3", () => {

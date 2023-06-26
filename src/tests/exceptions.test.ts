@@ -1,3 +1,7 @@
+import setupTestDB from "./utils/setupTestDB";
+
+setupTestDB();
+
 describe('Exceptions in Javascript', () => {
     function compileAndroidCode() {
         throw new Error('you are using the wrong JDK!');

@@ -1,0 +1,21 @@
+version: '3'
+
+networks:
+  -docker-net:
+
+services:
+  mysql-db:
+    image: mysql:8
+    container_name: mysql-8-test
+    restart: on-failure
+    ports:
+      - 3308:3306
+    volumes:
+      - mysql-data:/
+    environment:
+      - name=value
+    networks:
+      - docker-net
+    entrypoint:
+      - echo ""
+    

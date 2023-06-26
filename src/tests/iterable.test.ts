@@ -1,3 +1,7 @@
+import setupTestDB from "./utils/setupTestDB";
+
+setupTestDB();
+
 describe('Iterable in Javascript', () => {
     const shoppingList = [
         'diapers',
